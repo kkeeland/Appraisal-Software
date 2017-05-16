@@ -1,13 +1,13 @@
 <template>
     <!-- Start of invoice tab -->
     <div id="invoice" class="tab-pane fade">
-       
-
     
-        <h2 class="h2heading styleh2">Invoice: 115122ALO</h2>
-         <invoicemenu></invoicemenu>
-        <br>
-         <br>
+    
+        
+        <h2 class="h2heading styleh2">Invoice: 115122ALO 
+       <invoicemenu></invoicemenu>
+    </h2>
+    
     
         <!-- Start of Row 1a -->
         <div class="row spacethebottom">
@@ -83,13 +83,13 @@
                 <label class="col-md-12 control-label">Predefined Services</label>
     
                 <select id="example-getting-started" multiple="multiple">
-                                                <option value="cheese"><i class="glyphicon glyphicon-calendar">Heavy Equipment</i></option>
-                                                <option value="tomatoes">Example 2</option>
-                                                <option value="Mozzarella">Example 3</option>
-                                                <option value="Mushrooms">Example 4</option>
-                                                <option value="Pepperoni">Example 5</option>
-                                                <option value="Onions">Example 6</option>
-                                              </select>
+                                                    <option value="cheese"><i class="glyphicon glyphicon-calendar">Heavy Equipment</i></option>
+                                                    <option value="tomatoes">Example 2</option>
+                                                    <option value="Mozzarella">Example 3</option>
+                                                    <option value="Mushrooms">Example 4</option>
+                                                    <option value="Pepperoni">Example 5</option>
+                                                    <option value="Onions">Example 6</option>
+                                                  </select>
             </div>
         </div>
         <!-- end of row 9-->

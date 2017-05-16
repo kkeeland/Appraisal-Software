@@ -7,6 +7,9 @@ hr {
     margin-bottom:20px;
     margin-top:0px;
 }
+.blackletters {
+	color:black;
+}
 .top-buttons {
 	background-color: #747679;
     color: white;
@@ -14,7 +17,7 @@ hr {
 	margin-right:20px;
 }
 .styleh2{
-	text-align:center;background-color: #7d2e2c;color: white;margin-bottom: 20px;
+	background-color: #7d2e2c;color: white;margin-bottom: 20px;
 }
 .nav-tabs {
 	border-bottom: 0px solid #fff !important;

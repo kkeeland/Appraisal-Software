@@ -2,8 +2,7 @@
     <!-- Start of appraiser tab -->
     <div id="appraiser" class="tab-pane fade">
     
-        <h2 class="h2heading" style="text-align: center;">Appraiser Report</h2>
-        <hr>
+        <h2 class="h2heading styleh2" style="">Appraiser Report</h2>
         <div class="row spacethebottom">
             <label class="col-md-2 control-label">Total Loss?</label>
             <div class="col-md-2">
@@ -350,7 +349,7 @@
     
     
         <a href="#repairablearea" data-toggle="collapse">
-            <h2 class="h2heading">Repairable Vehicle Information</h2>
+            <h2 class="h2heading styleh2">Repairable Vehicle Information</h2>
         </a>
         <div id="repairablearea" data-parent="#accordion" class="collapse in">
     
@@ -585,7 +584,7 @@
     
     
         <div v-if="isTotaloss">
-            <h2 class="h2heading">Total Loss Vehicle Information</h2>
+            <h2 class="h2heading styleh2">Total Loss Vehicle Information</h2>
             <hr>
             <div id="totallossarea">
     
@@ -717,8 +716,27 @@
                 <h2 class="h2heading2">Salvage Bids</h2>
     
                 <div class="row spacethebottom">
-                    <label class="col-md-2 control-label">Buyer/Phone Number</label>
-                    <div class="col-md-4">
+                    <label class="col-md-3 control-label">Buyer/Phone Number</label>
+                    <div class="col-md-3 ">
+                        <select class="form-control pull-left" id="sel1">
+                                                              <option>IAA</option>
+                                                              <option>BidFast</option>
+                                                              <option>Other</option>
+                                                              </select>
+                    </div>
+    
+    
+                    <label class="col-md-1 control-label">Bid</label>
+                    <div class="col-md-2">
+                        <input type="text" id="retailvalue" name="retailvalue" required="" value="0.00" class="form-control">
+                    </div>
+    
+                </div>
+                <!-- endrow  -->
+    
+                <div class="row spacethebottom">
+                    <label class="col-md-3 control-label">Buyer/Phone Number</label>
+                    <div class="col-md-3">
                         <select class="form-control" id="sel1">
                                                               <option>IAA</option>
                                                               <option>BidFast</option>
@@ -736,27 +754,8 @@
                 <!-- endrow  -->
     
                 <div class="row spacethebottom">
-                    <label class="col-md-2 control-label">Buyer/Phone Number</label>
-                    <div class="col-md-4">
-                        <select class="form-control" id="sel1">
-                                                              <option>IAA</option>
-                                                              <option>BidFast</option>
-                                                              <option>Other</option>
-                                                              </select>
-                    </div>
-    
-    
-                    <label class="col-md-1 control-label">Bid</label>
-                    <div class="col-md-2">
-                        <input type="text" id="retailvalue" name="retailvalue" required="" value="0.00" class="form-control">
-                    </div>
-    
-                </div>
-                <!-- endrow  -->
-    
-                <div class="row spacethebottom">
-                    <label class="col-md-2 control-label">Buyer/Phone Number</label>
-                    <div class="col-md-4">
+                    <label class="col-md-3 control-label">Buyer/Phone Number</label>
+                    <div class="col-md-3">
                         <select class="form-control" id="sel1">
                                                               <option>IAA</option>
                                                               <option>BidFast</option>
@@ -779,8 +778,8 @@
                 <hr>
     
                 <div class="row spacethebottom">
-                    <label class="col-md-2 control-label">Salvage Pool</label>
-                    <div class="col-md-4">
+                    <label class="col-md-3 control-label">Salvage Pool</label>
+                    <div class="col-md-3">
                         <select class="form-control" id="sel1">
                                                               <option>IAA</option>
                                                               <option>Copart</option>
@@ -793,7 +792,7 @@
                         <input type="text" id="retailvalue" name="retailvalue" required="" value="" class="form-control">
                     </div>
     
-                    <label class="col-md-1 control-label">Permission</label>
+                    <label class="col-md-2 control-label">Permission</label>
                     <input type="checkbox" name="Front End" value="front">
     
     

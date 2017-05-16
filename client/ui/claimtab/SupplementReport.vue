@@ -1,19 +1,34 @@
 <template>
   <div id="supplement" class="tab-pane fade">
       
-      <suppmenu></suppmenu>
-      <br>
-      <br>
-      <br>
-      <hr>
     <div>
-    <h2 class="h2heading">Supplement 1
-      <span class="pull-right margin-right:15px;">
-                                 <button class="imagemanagerbutton">Add New Images</button>&nbsp;<button class="imagemanagerbutton">Print Selected</button><button class="imagemanagerbutton">Delete Supplement</button>
-                                   </span>
-    </h2>
-    <hr>
-  
+
+    
+
+     <div class="row spacethebottom">
+    </div>
+    <!--End of row -->
+    <h2 class="h2heading styleh2">Supplement 1<span class="pull-right btn-group blackletters">
+        <button data-toggle="dropdown" class="btn btn-default" aria-expanded="false">Browse Invoices<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="/emailCompose" class="font-bold">115122ALO</a></li>
+            <li><a href="#">115122ALO-1</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Create New Invoice</a></li>
+        </ul>
+        </span>
+        </h2>
+
+
+      <div class="" style="margin-bottom:20px;">
+      <button class="btn btn-primary">Print PDF</button>&nbsp;<button class="btn btn-primary">Delete Supplement</button>
+      </div>
+
+      <div class="row spacethebottom">
+    </div>
+    <!--End of row -->
+    
+
     <div class="row spacethebottom">
       <div class="form-group">
         <label class="col-md-1 control-label">Date of Supplement</label>
@@ -72,7 +87,7 @@
     <div class="row spacethebottom"></div>
     <div class="row spacethebottom">
       <div class="form-group">
-        <label class="col-md-3 control-label"><h3 style="font-size:2em;">Supplement Total</h3></label>
+        <label class="col-md-4 control-label"><h3 style="font-size:2em;">Supplement Total</h3></label>
         <div class="col-md-2">
           <input type="text" id="repaircost" name="repaircost" value="$0.00" required="" data-schema-key="repaircost" class="form-control">
         </div>

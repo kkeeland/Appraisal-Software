@@ -3,8 +3,7 @@
     <div id="timeline" class="tab-pane fade">
        
         <h2 class="h2heading styleh2">Timeline</h2>
-    <br>
-
+        
       <notebox></notebox>
             <div class="ibox float-e-margins">
                     

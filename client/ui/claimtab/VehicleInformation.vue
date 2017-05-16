@@ -1,8 +1,7 @@
 <template>
     <div id="vehicle" class="tab-pane fade">
     
-        <h2 class="h2heading">Vehicle Information</h2>
-        <hr>
+        <h2 class="h2heading styleh2">Vehicle Information</h2>
         <!-- Start of Tab -->
         <div id="vehicle" class="collapse in">
     
@@ -123,8 +122,7 @@
             <!-- End of Row 1d -->
     
             <!-- start of row 3 -->
-                <h2 class="h2heading">Shop's Information</h2>
-                <hr>
+                <h2 class="h2heading styleh2">Shop's Information</h2>
             <div id="shopinformation">
                 <div class="row spacethebottom">
     
@@ -207,8 +205,7 @@
             <!-- end of collapse -->
     
             <!-- start of row 5 -->
-                <h2 class="h2heading">Other Location Information</h2>
-                <hr>
+                <h2 class="h2heading styleh2">Other Location Information</h2>
             
             <div id="otherinformation">
                 <div class="row spacethebottom">
@@ -292,8 +289,7 @@
             <!-- end of collapse -->
     
             <!-- start of row 8 -->
-                <h2 class="h2heading">Facts of Loss</h2>
-                <hr>
+                <h2 class="h2heading styleh2">Facts of Loss</h2>
             <div id="factsofloss">
                 <div class="row spacethebottom">
     

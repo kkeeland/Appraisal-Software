@@ -1,8 +1,7 @@
 <template>
   <div id="general" class="tab-pane fade in active">
   
-    <h2 class="h2heading">General Information</h2>
-    <hr>
+    <h2 class="h2heading styleh2">General Information</h2>
   
     <!-- Start of Tab -->
   
@@ -107,8 +106,7 @@
   
   
       <!-- start of row 3 -->
-        <h2 class="h2heading">Insured's Information</h2>
-      <hr>
+        <h2 class="h2heading styleh2">Insured's Information</h2>
       <div id="insuredsinformation" data-parent="#accordion" class="">
         <div class="row spacethebottom">
   
@@ -198,8 +196,7 @@
       <!-- end of collapse -->
   
       <!-- start of row 5 -->
-        <h2 class="h2heading">Claimant's Information</h2>
-      <hr>
+        <h2 class="h2heading styleh2">Claimant's Information</h2>
       <div id="claimantsinformation" data-parent="#accordion" class="">
         <div class="row spacethebottom">
   
