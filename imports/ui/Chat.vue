@@ -4,6 +4,7 @@
 
     <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="Enter new message" />
 
+
     <div v-if="!$subReady.messages">
       Loading...
     </div>
@@ -11,27 +12,17 @@
     <div class="message" v-for="msg in messages">
       <span class="content">{{ msg.message }}</span>
       <button @click="removeMessage(msg._id)">x</button>
+
+
     </div>
   </div>
 </template>
 
 <script>
-const test = {
-  meteor: {
-    subscribe: {
-      'messages': [],
-    },
-    messages() {
-      return Messages.find({}, {
-        sort: { date: -1 },
-      });
-    },
-  },
-}
+
 
 export default {
   name: 'chat',
-  mixins: [test],
   data () {
     return {
       newMessage: '',
@@ -41,14 +32,20 @@ export default {
   meteor: {
     messages() {
       return Messages.find({}, {
-        sort: { date: 1 },
+        sort: { date: -1 },
       });
     },
+    subscribe: {
+      'messages': [],
+    }
   },
   methods: {
     sendMessage() {
-      Meteor.call('addMessage', this.newMessage);
-      this.newMessage = '';
+      if (this.newMessage !== ""){
+        Meteor.call('addMessage', this.newMessage);
+        this.newMessage = '';
+      }
+      
     },
     removeMessage(_id) {
       Meteor.call('removeMessage', _id);
@@ -57,27 +54,14 @@ export default {
 };
 </script>
 
-<style scoped>
-.chat {
-  max-width: 300px;
-}
 
-input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 6px 12px;
-  border: solid 1px #ccc;
-  border-radius: 3px;
-  margin-bottom: 4px;
-}
 
-.message {
-  margin: 4px 2px;
-  display: flex;
-  flex-direction: row;
-}
 
-.message .content {
-  flex: auto 1 1;
-}
-</style>
+
+
+
+
+
+
+
+
