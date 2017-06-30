@@ -37,7 +37,7 @@
     
         </div>
     
-        <h2 class="h2heading2">UPD/Betterment</h2>
+        <h2 class="styleh2">UPD/Betterment</h2>
         <div class="row spacethebottom">
     
             <div class="form-group">
@@ -98,7 +98,7 @@
         </div>
         <!-- End of Empty Row -->
     
-        <h2 class="h2heading2">Appraiser Comments</h2>
+        <h2 class="styleh2">Appraiser Comments</h2>
         <div class="row spacethebottom">
     
             <div class="form-group">
@@ -138,7 +138,7 @@
     
     
     
-        <h2 class="h2heading2">Retail Book Value</h2>
+        <h2 class="styleh2">Retail Book Value</h2>
         <div class="row spacethebottom">
     
     
@@ -349,13 +349,13 @@
     
     
         <a href="#repairablearea" data-toggle="collapse">
-            <h2 class="h2heading styleh2">Repairable Vehicle Information</h2>
+            <h2 class="styleh2">Repairable Vehicle Information</h2>
         </a>
         <div id="repairablearea" data-parent="#accordion" class="collapse in">
     
     
     
-            <h2 class="h2heading2">Parts Information</h2>
+            <h2 class="styleh2">Parts Information</h2>
             <!-- Empty Row -->
             <div class="row spacethebottom">
             </div>
@@ -448,7 +448,7 @@
             <div class="row spacethebottom">
             </div>
             <!-- End of Empty Row -->
-            <h2 class="h2heading2">Repair Information</h2>
+            <h2 class="styleh2">Repair Information</h2>
             <!-- Empty Row -->
             <div class="row spacethebottom">
             </div>
@@ -613,7 +613,7 @@
     
                 <div class="row spacethebottom"></div>
     
-                <h2 class="h2heading2">Total Loss Basis</h2>
+                <h2 class="styleh2">Total Loss Basis</h2>
     
     
     
@@ -713,7 +713,7 @@
     
                 <div class="row spacethebottom"></div>
     
-                <h2 class="h2heading2">Salvage Bids</h2>
+                <h2 class="styleh2">Salvage Bids</h2>
     
                 <div class="row spacethebottom">
                     <label class="col-md-3 control-label">Buyer/Phone Number</label>

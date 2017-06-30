@@ -3,7 +3,7 @@
                 <div>
                 <div style="height:50px;">
                 <div class="pull-left"><button class="btn btn-primary"  @click="changeNoteboxstatus()">Add Note<span class="caret"></span></button></div>
-                <div class="pull-right"><button class="btn btn-primary">Email PDF</button>&nbsp;<button class="btn btn-primary">Print PDF</button></div>
+                <div class="pull-left">&nbsp;<button class="btn btn-primary">Email PDF</button>&nbsp;<button class="btn btn-primary">Print PDF</button></div>
                 </div>
                 
 

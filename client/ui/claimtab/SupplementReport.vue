@@ -9,12 +9,12 @@
     </div>
     <!--End of row -->
     <h2 class="h2heading styleh2">Supplement 1<span class="pull-right btn-group blackletters">
-        <button data-toggle="dropdown" class="btn btn-default" aria-expanded="false">Browse Invoices<span class="caret"></span></button>
+        <button data-toggle="dropdown" class="btn btn-default" aria-expanded="false">Browse Supplements<span class="caret"></span></button>
         <ul class="dropdown-menu">
-            <li><a href="/emailCompose" class="font-bold">115122ALO</a></li>
-            <li><a href="#">115122ALO-1</a></li>
+            <li><a href="/emailCompose" class="font-bold">115122ALO-1</a></li>
+            <li><a href="#">115122ALO-2</a></li>
             <li class="divider"></li>
-            <li><a href="#">Create New Invoice</a></li>
+            <li><a href="#">Create New Supplement</a></li>
         </ul>
         </span>
         </h2>
@@ -76,7 +76,7 @@
   
     <div class="row spacethebottom">
   
-      <h2 class="h2heading2">Appraiser Remarks</h2>
+      <h2 class="styleh2">Appraiser Remarks</h2>
   
       <div id="summernote2">Hello Summernote</div>
   

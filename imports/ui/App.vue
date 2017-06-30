@@ -56,7 +56,7 @@
       
     },
     metaInfo: {
-      title: 'IAS Management System',
+      title: 'Claim Management System',
     },
   };
 </script>

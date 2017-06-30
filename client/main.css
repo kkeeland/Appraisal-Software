@@ -9,6 +9,8 @@ hr {
 }
 .blackletters {
 	color:black;
+	margin-top:-8px;
+	
 }
 .top-buttons {
 	background-color: #747679;
@@ -17,7 +19,7 @@ hr {
 	margin-right:20px;
 }
 .styleh2{
-	background-color: #7d2e2c;color: white;margin-bottom: 20px;
+	background-color: #7d2e2c;color: white;margin-bottom: 20px;padding: 20px 20px;border-radius:5px;
 }
 .nav-tabs {
 	border-bottom: 0px solid #fff !important;
@@ -38,7 +40,7 @@ border-bottom: 1px #fff !important;
 }
 h2 {
     padding:10px;
-	font-size: 2em;
+	font-size: 17px;
     font-weight: 600;
     color: #7d2e2c;
 }

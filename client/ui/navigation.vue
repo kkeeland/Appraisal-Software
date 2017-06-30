@@ -9,11 +9,11 @@
     
     
                     <div class="dropdown profile-element">
-                        <img height="50px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
+                        <img height="70px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
                         <br />
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold" style="font-size:1.5em;">Terry Earl</strong>
-                                 </span> <span class="text-muted text-xs block">President of IAS <b class="caret"></b></span> </span>
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold" style="font-size:1.5em;">Kevin Keeland</strong>
+                                 </span> <span class="text-muted text-xs block">Appraiser <b class="caret"></b></span> </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a href="profile">Profile</a></li>

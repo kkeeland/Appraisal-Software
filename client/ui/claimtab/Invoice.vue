@@ -8,7 +8,10 @@
        <invoicemenu></invoicemenu>
     </h2>
     
-    
+        <div class=""><button class="btn btn-primary">Email PDF</button>&nbsp;<button class="btn btn-primary">Print PDF</button></div>
+        
+         <div class="row spacethebottom"></div>
+
         <!-- Start of Row 1a -->
         <div class="row spacethebottom">
     
