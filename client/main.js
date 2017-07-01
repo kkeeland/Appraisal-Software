@@ -9,7 +9,6 @@ import multiselect from 'bootstrap-multiselect';
 import sortable from 'jquery-ui-sortable-npm';
 import swal from 'sweetalert2';
 
-
 Vue.use(VueInputmask);
 
 

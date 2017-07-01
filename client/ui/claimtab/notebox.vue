@@ -16,10 +16,10 @@
                         <label class="col-md-1 control-label">Note Type:</label>
                         <div class="col-md-3">
                             <select class="form-control" id="locationtype">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option>Appointment Note</option>
+                            <option>Contact Note</option>
+                            <option>Other</option> 
+                            <option>Billing Note</option>              
                             </select>
                         </div>
                     </div>
@@ -36,23 +36,11 @@
 
                 <div class="row spacethebottom">
 
-                    <div class="form-group ">
-                        <label class="col-md-2 control-label">Reuseable Notes</label><a href="#">Add New Note</a>
-                        <div class="col-md-7">
-                            <select class="form-control" id="locationtype">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            </select> </div>
-                    </div>
+                    
                 </div>
                 <!-- End of Row -->
 
-                <!-- Empty Row -->
-                <div class="row spacethebottom">
-                </div>
-                <!-- End of Empty Row -->
+              
 
 
                 <!-- start of row 9-->

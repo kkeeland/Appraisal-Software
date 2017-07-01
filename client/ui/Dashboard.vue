@@ -1,9 +1,6 @@
 <template>
     <div class="wrapper wrapper-content">
         <div class="row">
-            <div class="pull-left">
-                <h3 style="margin-left: 17px;margin-top: 14px;">{{now}}</h3>
-            </div>
             <div id="reportrange" class="pull-right text-center" style="background: #fff; cursor: pointer; padding: 12px 10px; border: 1px solid #ccc; width:300px;margin-bottom:20px;margin-right: 15px;">
                 <i class="fa fa-calendar"></i>&nbsp;
                 <span></span> <b class="caret"></b>
@@ -18,7 +15,7 @@
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">$22,221</h1>
-    
+
                         <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
                         <small>Total income</small>
                     </div>
@@ -32,7 +29,7 @@
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">2.1</h1>
-    
+
                         <div class="stat-percent font-bold text-info">10% <i class="fa fa-level-down"></i></div>
                         <small>Days</small>
                     </div>
@@ -46,7 +43,7 @@
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">12</h1>
-    
+
                         <div class="stat-percent font-bold text-navy">44% <i class="fa fa-level-up"></i></div>
                         <small>New Appraisal Request</small>
                     </div>
@@ -60,23 +57,43 @@
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">10</h1>
-    
+
                         <small>In first month</small>
                     </div>
                 </div>
             </div>
         </div>
-    
+        <div class="row" style="margin-bottom:20px;">
+            <div class="form-group">
+                <div id="statusselector" class="">
+                    <label class="col-md-1 control-label">Assignment Type Filter:</label>
+                    <div class="col-md-3">
+                        <select class="form-control" id="selectorstatus">
+                                                <option>All Status Types</option>
+                                              <option>New Assignments</option>
+                                              <option>Scheduled</option>
+                                              <option>Inspected</option>
+                                              <option>Billed</option>
+                                              <option>Overdue</option>
+                                              <option>Paid</option>
+                                              <option>Cancelled</option>
+                                              </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row">
-    
+
             <div class="col-lg-12">
-    
-    
+
+
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>Assignments</h5>
                     </div>
-    
+
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-condensed table-hover">
                             <tbody>
@@ -250,7 +267,7 @@
                                 </tr>
                             </tbody>
                         </table>
-    
+
                         <nav>
                             <ul class="pagination">
                                 <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
@@ -262,22 +279,22 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
-    
-    
-    
+
+
+
     </div>
 </template>
 
 <script>
     import moment from 'moment';
-    
-    
+
+
     export default {
         meteor: {
             data: {
-                now: function() {
+                now: function () {
                     var now = moment().format('MM-DD-YY');
                     return now;
                 },
@@ -290,11 +307,11 @@
         mounted() {
             var start = moment().subtract(29, 'days');
             var end = moment();
-    
+
             function cb(start, end) {
                 $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
             }
-    
+
             $('#reportrange').daterangepicker({
                 startDate: start,
                 endDate: end,
@@ -307,9 +324,10 @@
                     'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 }
             }, cb);
-    
+
             cb(start, end);
-    
+
         }
     };
+
 </script>
