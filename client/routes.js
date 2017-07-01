@@ -7,6 +7,7 @@ import { RouterFactory } from 'meteor/akryum:vue-router2'
 import App from '/imports/ui/App.vue'
 import Claim from '/imports/ui/Claim.vue'
 import Dashboard from '/client/ui/Dashboard.vue'
+import Test from '/imports/ui/Test.vue'
 
 
 RouterFactory.configure(factory => {
@@ -26,6 +27,11 @@ RouterFactory.configure(factory => {
         path:'/claim',
         name:'claim',
         component: Claim,
+    }, 
+    {
+        path:'/test',
+        name:'test',
+        component: Test,
     }
   ])
 })

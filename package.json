@@ -6,13 +6,18 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "bcrypt": "^1.0.2",
+    "bootstrap-datepicker": "^1.7.0",
     "bootstrap-multiselect": "^0.9.13-1",
+    "jquery-ui-sortable-npm": "^1.0.0",
+    "meteor-node-stubs": "^0.2.11",
     "moment": "^2.18.1",
     "summernote": "^0.8.3",
     "sweetalert2": "^6.6.3",
     "vue": "^2.3.3",
     "vue-html-editor": "^0.2.1",
     "vue-inputmask": "^0.1.2",
+    "vue-material": "^0.7.4",
+    "vue-meta": "^1.0.4",
     "vue-meteor-tracker": "^1.2.1",
     "vue-router": "^2.5.3",
     "vuetable-2": "^1.6.0"

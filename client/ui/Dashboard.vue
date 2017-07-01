@@ -65,9 +65,11 @@
         </div>
         <div class="row" style="margin-bottom:20px;">
             <div class="form-group">
+                                  
+
                 <div id="statusselector" class="">
-                    <label class="col-md-1 control-label">Assignment Type Filter:</label>
-                    <div class="col-md-3">
+                    <label class="col-md-12 control-label">Assignment Type Filter:</label>
+                    <div class="col-md-2">
                         <select class="form-control" id="selectorstatus">
                                                 <option>All Status Types</option>
                                               <option>New Assignments</option>

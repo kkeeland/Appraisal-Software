@@ -8,8 +8,12 @@ import datepicker from 'bootstrap-datepicker';
 import multiselect from 'bootstrap-multiselect';
 import sortable from 'jquery-ui-sortable-npm';
 import swal from 'sweetalert2';
+import VueMaterial from 'vue-material';
+import 'vue-material/dist/vue-material.css';
+
 
 Vue.use(VueInputmask);
+Vue.use(VueMaterial);
 
 
 Accounts.ui.config({
