@@ -15,10 +15,10 @@
           <label class="col-md-2 control-label">Insurance Profile</label>
           <div class="col-md-3">
             <select class="form-control" id="insuranceprofile">
-                                              <option>1</option>
-                                              <option>2</option>
-                                              <option>3</option>
-                                              <option>4</option>
+                                              <option>Permanent General</option>
+                                              <option>Amica</option>
+                                              <option>Firemans Fund</option>
+                                              <option>USAA</option>
                                               </select>
           </div>
         </div>
@@ -36,10 +36,10 @@
           <label class="col-md-1 control-label">Appraiser</label>
           <div class="col-md-3">
             <select class="form-control" id="appraisername">
-                                              <option>1</option>
-                                              <option>2</option>
-                                              <option>3</option>
-                                              <option>4</option>
+                                              <option>Terry</option>
+                                              <option>Nick</option>
+                                              <option>Brandon</option>
+                                              <option>Alex</option>
                                               </select>
           </div>
         </div>
@@ -74,10 +74,11 @@
           <label class="col-md-1 control-label">Type of Loss</label>
           <div class="col-md-3">
             <select class="form-control" id="typeofloss">
-                                              <option>1</option>
-                                              <option>2</option>
-                                              <option>3</option>
-                                              <option>4</option>
+                                              <option>Collision</option>
+                                              <option>Liability</option>
+                                              <option>Comprehensive</option>
+                                              <option>Theft</option>
+                                              <option>Fire</option>
                                               </select>
           </div>
         </div>

@@ -2,7 +2,7 @@
     <div class="row border-bottom topnavbar">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <a id="navbar-minimalize" class="minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                <a id="navbar-minimalize" class="minimalize-styl-2 btn btn-primary " href="#" @click="closemenu"><i class="fa fa-bars"></i> </a>
                 <form role="search" class="navbar-form-custom" action="search_results">
                     <div class="form-group">
                         <input type="text" placeholder="Search for index or claim number or name..." class="form-control" name="top-search" size="350" id="top-search">
@@ -124,5 +124,13 @@
 </template>
 
 <script> 
-    
+
+    export default {
+         methods: {
+            closemenu() {
+                 $('body').toggleClass("mini-navbar");
+            }
+        }
+    };
+   
 </script>

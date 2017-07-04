@@ -323,7 +323,7 @@ import {mdChips} from 'vue-material';
              name: mdWhiteframe, 
              name: mdInput, 
              name: mdLayout, 
-               name: mdChips
+               name: mdChips, 
          },
         mounted() {
             var start = moment().subtract(29, 'days');

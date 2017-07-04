@@ -4,7 +4,7 @@
     
     
         
-        <h2 class="h2heading styleh2">Invoice: 115122ALO 
+        <h2 class="h2heading2 h2button">Invoice: 115122ALO 
        <invoicemenu></invoicemenu>
     </h2>
     
@@ -99,7 +99,7 @@
     
         <!-- Start of Row -->
     
-        <h2 class="h2heading">Invoice Fees</h2>
+        <h2 class="h2heading2 styleh2">Invoice Fees</h2>
         <hr>
         <div class="row spacethebottom">
     

@@ -8,7 +8,7 @@
      <div class="row spacethebottom">
     </div>
     <!--End of row -->
-    <h2 class="h2heading styleh2">Supplement 1<span class="pull-right btn-group blackletters">
+    <h2 class="h2heading h2button">Supplement 1<span class="pull-right btn-group blackletters">
         <button data-toggle="dropdown" class="btn btn-default" aria-expanded="false">Browse Supplements<span class="caret"></span></button>
         <ul class="dropdown-menu">
             <li><a href="/emailCompose" class="font-bold">115122ALO-1</a></li>

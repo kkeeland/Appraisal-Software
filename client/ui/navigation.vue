@@ -12,8 +12,8 @@
                         <img height="70px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
                         <br />
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold" style="font-size:1.5em;">Kevin Keeland</strong>
-                                 </span> <span class="text-muted text-xs block">Appraiser <b class="caret"></b></span> </span>
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold" style="font-size:1.5em;">Terry Earl</strong>
+                                         </span> <span class="text-muted text-xs block">Owner - Tuscon <b class="caret"></b></span> </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a href="profile">Profile</a></li>
@@ -26,7 +26,7 @@
                     </div>
     
                     <div class="logo-element">
-                        TE
+                        {{namelabel}}
                     </div>
                 </li>
     
@@ -34,23 +34,25 @@
                     <a href="dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.layouts">New Assignment</span> </a>
+                    <a href="claim"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.layouts">New Assignment</span> </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.graphs">Billing Dashboard</span><span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
+                    <a href="#" data-target="#billingmenu" data-toggle=""><i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.graphs">Billing Dashboard</span></a>
+                    <ul class="nav nav-second-level collapse in" id="billingmenu">
                         <li class=""><a href="graphFlot">Billing Reports</a></li>
                     </ul>
                 </li>
                 <li class="">
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.mailbox">Add New </span></a>
-                    <ul class="nav nav-second-level collapse">
+                    <ul class="nav nav-second-level collapse <in></in>">
                         <li><a href="mailbox">Add Insurance Company</a></li>
                         <li><a href="emailView">Add New Appraiser</a></li>
                         <li><a href="emailCompose">Add New Shop</a></li>
                         <li><a href="emailTemplates">Add New Adjuster</a></li>
                     </ul>
                 </li>
+    
+    
     
                 <li>
                     <a href="metrics"><i class="fa fa-database"></i> <span class="nav-label" data-i18n="nav.metrics">Settings</span> </a>
@@ -67,7 +69,16 @@
 
 <script>
     export default {
-        name: 'navigation'
-    };
+        name: 'navigation',
+        data(){
+            return {
+                namelabel: "TE"
+            }
+        },
+        methods: {
 
+        }
+
+        
+    };
 </script>
