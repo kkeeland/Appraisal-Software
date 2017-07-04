@@ -22,6 +22,8 @@
   import {
     Session
   } from 'meteor/session';
+
+
   
   console.log(Session);
   
@@ -53,7 +55,6 @@
       }
     },
     components: {
-      
     },
     metaInfo: {
       title: 'Claim Management System',

@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper wrapper-content">
-        <div class="row">
+            <div class="row">
             <div id="reportrange" class="pull-right text-center" style="background: #fff; cursor: pointer; padding: 12px 10px; border: 1px solid #ccc; width:300px;margin-bottom:20px;margin-right: 15px;">
                 <i class="fa fa-calendar"></i>&nbsp;
                 <span></span> <b class="caret"></b>
@@ -284,13 +284,23 @@
 
         </div>
 
-
+    <md-chip>Marcos Moura</md-chip>
+<md-chip md-deletable>Luiza Ivanenko</md-chip>
+<md-chip md-editable>Alban Mouton</md-chip>
 
     </div>
 </template>
 
 <script>
     import moment from 'moment';
+    import {mdAvatar} from 'vue-material';
+    import {mdButton} from 'vue-material';
+    import {mdToolbar} from 'vue-material';
+    import {mdWhiteframe} from 'vue-material';
+import {mdInput} from 'vue-material';
+import {mdLayout} from 'vue-material';
+import {mdChips} from 'vue-material';
+
 
 
     export default {
@@ -306,6 +316,15 @@
                 }
             }
         },
+         components: {
+             name: mdAvatar, 
+             name: mdButton, 
+             name: mdToolbar, 
+             name: mdWhiteframe, 
+             name: mdInput, 
+             name: mdLayout, 
+               name: mdChips
+         },
         mounted() {
             var start = moment().subtract(29, 'days');
             var end = moment();

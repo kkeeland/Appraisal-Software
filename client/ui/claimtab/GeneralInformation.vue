@@ -47,12 +47,9 @@
   
         <div class="form-group">
           <label class="col-md-1 control-label">Date Recieved</label>
-          <div class="col-md-3">
-<form novalidate @submit.stop.prevent="submit">
-  <md-input-container>
-    <label>Initial value</label>
-    <md-input v-model="initialValue"></md-input>
-  </md-input-container>          </div>
+         <div class="col-md-3">
+            <input type="text" class="form-control" v-mask="'99/99/9999'" id="dateofloss" />
+          </div>
         </div>
   
   
