@@ -8,6 +8,8 @@ import App from '/imports/ui/App.vue'
 import Claim from '/imports/ui/Claim.vue'
 import Dashboard from '/client/ui/Dashboard.vue'
 import Test from '/imports/ui/Test.vue'
+import emailCompose from '/client/ui/emailCompose.vue'
+import Billingdashboard from '/client/ui/Billingdashboard.vue'
 
 
 RouterFactory.configure(factory => {
@@ -19,11 +21,6 @@ RouterFactory.configure(factory => {
       component: Dashboard,
     }, 
     {
-      path: '/dashboard',
-      name: 'direct-dash',
-      component: Dashboard,
-    }, 
-    {
         path:'/claim',
         name:'claim',
         component: Claim,
@@ -32,6 +29,18 @@ RouterFactory.configure(factory => {
         path:'/test',
         name:'test',
         component: Test,
+    },
+    {
+        path:'/emailcompose', 
+        name:'emailcompose',
+        component: emailCompose,
+    }, 
+     {
+        path:'/billingdashboard', 
+        name:'billingdashboard',
+        component: Billingdashboard,
     }
+        
+
   ])
 })

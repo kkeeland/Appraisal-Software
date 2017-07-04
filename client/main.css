@@ -59,6 +59,13 @@ input[type="radio"], input[type="checkbox"] {
 	 color:white;
 	 font-size: 1.5em;
 }
+#check1 {
+    width: 30px;
+    height: 30px;        
+}
+.note-editor.note-frame {
+	border: none !important; 
+}
 #insuredsinformation [data-toggle="collapse"]:after
 {
 	font-family: 'Glyphicons Halflings';
@@ -103,4 +110,14 @@ span.multiselect-native-select{position:relative}span.multiselect-native-select 
 }
 #login-buttons .login-button, .accounts-dialog .login-button {
     background: #7d2e2c !important;
+}
+
+
+.md-theme-default.md-toolbar {
+	background-color: #7d2e2c !important;
+	
+}
+.md-title {
+color: white !important;
+
 }

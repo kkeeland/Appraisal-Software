@@ -1,141 +1,49 @@
 <template>
-    <div class="wrapper wrapper-content">
-    
-        <div class="row">
+<div class="wrapper wrapper-content">
+            <div class="row">
+
+            <div>
+            <h1>Billing Reports</h1>
+            </div>
+
             <div id="reportrange" class="pull-right text-center" style="background: #fff; cursor: pointer; padding: 12px 10px; border: 1px solid #ccc; width:300px;margin-bottom:20px;margin-right: 15px;">
                 <i class="fa fa-calendar"></i>&nbsp;
                 <span></span> <b class="caret"></b>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <span class="label label-success pull-right">This Month</span>
-                        <h5>Income</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <h1 class="no-margins">$22,221</h1>
-    
-                        <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
-                        <small>Total income</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <span class="label label-success pull-right">This Month</span>
-                        <h5>Cycle Time</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <h1 class="no-margins">2.1</h1>
-    
-                        <div class="stat-percent font-bold text-info">10% <i class="fa fa-level-down"></i></div>
-                        <small>Days</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <span class="label label-primary pull-right">Today</span>
-                        <h5>New Assignments</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <h1 class="no-margins">12</h1>
-    
-                        <div class="stat-percent font-bold text-navy">44% <i class="fa fa-level-up"></i></div>
-                        <small>New Appraisal Request</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <span class="label label-primary pull-right">Open Task</span>
-                        <h5>Open Task Items</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <h1 class="no-margins">10</h1>
-    
-                        <small>In first month</small>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row" style="margin-bottom:20px;">
             <div class="form-group">
-    
-    
+                                  
+
                 <div id="statusselector" class="">
                     <label class="col-md-12 control-label">Assignment Type Filter:</label>
                     <div class="col-md-2">
                         <select class="form-control" id="selectorstatus">
-                                                                        <option>All Status Types</option>
-                                                                      <option>New Assignments</option>
-                                                                      <option>Scheduled</option>
-                                                                      <option>Inspected</option>
-                                                                      <option>Billed</option>
-                                                                      <option>Overdue</option>
-                                                                      <option>Paid</option>
-                                                                      <option>Cancelled</option>
-                                                                      </select>
+                                                <option>All Status Types</option>
+                                              <option>New Assignments</option>
+                                              <option>Scheduled</option>
+                                              <option>Inspected</option>
+                                              <option>Billed</option>
+                                              <option>Overdue</option>
+                                              <option>Paid</option>
+                                              <option>Cancelled</option>
+                                              </select>
                     </div>
                 </div>
             </div>
         </div>
-    
-    
-        <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
-            <md-toolbar>
-                <div class="md-toolbar-container">
-                    <h3 class="md-title">Sidenav content</h3>
-                </div>
-            </md-toolbar>
-    
-            <md-list>
-                <md-subheader>Navigation</md-subheader>
-    
-                <md-list-item>
-                    <md-icon>move_to_inbox</md-icon> <span>Inbox</span>
-                </md-list-item>
-    
-                <md-list-item>
-                    <md-icon>send</md-icon> <span>Outbox</span>
-                </md-list-item>
-    
-                <md-list-item>
-                    <md-icon>delete</md-icon> <span>Trash</span>
-                </md-list-item>
-    
-                <md-list-item>
-                    <md-icon>error</md-icon> <span>Spam</span>
-    
-                    <md-divider class="md-inset"></md-divider>
-                </md-list-item>
-            </md-list>
-    
-            <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
-        </md-sidenav>
-    
-    
+
+
         <div class="row">
-    
+
             <div class="col-lg-12">
-    
-                <md-toolbar>
-                    <md-button class="md-icon-button">
-                        <md-icon>menu</md-icon>
-                    </md-button>
-    
-                    <h2 class="md-title" style="flex: 1">Assignments</h2>
-                </md-toolbar>
-    
-    
-                <div class="">
-    
-    
+
+
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Assignments</h5>
+                    </div>
+
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-condensed table-hover">
                             <tbody>
@@ -309,7 +217,7 @@
                                 </tr>
                             </tbody>
                         </table>
-    
+
                         <nav>
                             <ul class="pagination">
                                 <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
@@ -321,51 +229,18 @@
                     </div>
                 </div>
             </div>
-    
-        </div>
-    
-        <md-chip>Marcos Moura</md-chip>
-        <md-chip md-deletable>Luiza Ivanenko</md-chip>
-        <md-chip md-editable>Alban Mouton</md-chip>
-    
-    </div>
-</template>
 
-<script>
-    import moment from 'moment';
-    import {
-        mdAvatar
-    } from 'vue-material';
-    import {
-        mdButton
-    } from 'vue-material';
-    import {
-        mdToolbar
-    } from 'vue-material';
-    import {
-        mdWhiteframe
-    } from 'vue-material';
-    import {
-        mdInput
-    } from 'vue-material';
-    import {
-        mdLayout
-    } from 'vue-material';
-    import {
-        mdChips
-    } from 'vue-material';
-    import {
-        mdList
-    } from 'vue-material';
-    import {
-        mdSelect
-    } from 'vue-material';
-    
-    
-    export default {
+        </div>
+
+    </div>
+    </template>
+   
+
+   <script>
+   export default {
         meteor: {
             data: {
-                now: function() {
+                now: function () {
                     var now = moment().format('MM-DD-YY');
                     return now;
                 },
@@ -375,42 +250,16 @@
                 }
             }
         },
-        methods: {
-            toggleLeftSidenav() {
-                this.$refs.leftSidenav.toggle();
-            },
-            toggleRightSidenav() {
-                this.$refs.rightSidenav.toggle();
-            },
-            closeRightSidenav() {
-                this.$refs.rightSidenav.close();
-            },
-            open(ref) {
-                console.log('Opened: ' + ref);
-            },
-            close(ref) {
-                console.log('Closed: ' + ref);
-            }
-        },
-        components: {
-            name: mdAvatar,
-            name: mdButton,
-            name: mdToolbar,
-            name: mdWhiteframe,
-            name: mdInput,
-            name: mdLayout,
-            name: mdChips,
-            name: mdList,
-            name: mdSelect
-        },
+         components: {
+         },
         mounted() {
             var start = moment().subtract(29, 'days');
             var end = moment();
-    
+
             function cb(start, end) {
                 $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
             }
-    
+
             $('#reportrange').daterangepicker({
                 startDate: start,
                 endDate: end,
@@ -423,9 +272,12 @@
                     'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 }
             }, cb);
-    
+
             cb(start, end);
-    
+
         }
     };
-</script>
+       
+   </script>
+
+ 

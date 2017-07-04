@@ -31,16 +31,16 @@
                 </li>
     
                 <li>
-                    <a href="dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                    <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
                 </li>
                 <li>
                     <a href="claim"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.layouts">New Assignment</span> </a>
                 </li>
                 <li>
-                    <a href="#" data-target="#billingmenu" data-toggle=""><i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.graphs">Billing Dashboard</span></a>
-                    <ul class="nav nav-second-level collapse in" id="billingmenu">
+                    <a href="billingdashboard" data-target="#billingmenu" data-toggle=""><i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.graphs">Billing Reports</span></a>
+                    <!-- <ul class="nav nav-second-level collapse in" id="billingmenu">
                         <li class=""><a href="graphFlot">Billing Reports</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="">
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.mailbox">Add New </span></a>

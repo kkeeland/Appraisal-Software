@@ -86,10 +86,10 @@
                     <label class="col-md-1 control-label">Location Type</label>
                     <div class="col-md-3">
                         <select class="form-control" id="locationtype">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
+                        <option>Residence</option>
+                        <option>Shop</option>
+                        <option>Insurance Yard</option>
+                        <option>Tow Yard</option>
                         </select>
                     </div>
                 </div>
