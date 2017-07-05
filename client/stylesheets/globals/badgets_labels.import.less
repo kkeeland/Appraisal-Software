@@ -3,8 +3,8 @@
   background-color: @light-gray;
   color: @label-badget-color;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 300;
   padding: 3px 8px;
   text-shadow: none;
 }
@@ -21,12 +21,16 @@
   text-shadow: none;
 }
 
-.label-primary, .badge-primary {
+.label-paid, .badge-primary {
   background-color: @navy;
   color: #FFFFFF;
 }
+.label-cancelled, .badge-primary {
+  background-color: rgb(111, 111, 111);
+  color: #FFFFFF;
+}
 
-.label-success, .badge-success {
+.label-billed, .badge-success {
   background-color: @blue;
   color: #FFFFFF;
 }
@@ -36,22 +40,22 @@
   color: #FFFFFF;
 }
 
-.label-warning-light, .badge-warning-light {
+.label-new-assignment, .badge-warning-light {
   background-color: @yellow;
   color: #ffffff;
 }
 
-.label-danger, .badge-danger {
+.label-overdue, .badge-danger {
   background-color: @red;
   color: #FFFFFF;
 }
 
-.label-info, .badge-info {
+.label-inspected, .badge-info {
   background-color: @lazur;
   color: #FFFFFF;
 }
 
-.label-inverse, .badge-inverse {
+.label-scheduled, .badge-inverse {
   background-color: #262626;
   color: #FFFFFF;
 }

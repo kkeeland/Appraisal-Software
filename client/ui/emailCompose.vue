@@ -3,12 +3,11 @@
         <div class="row">
             <div class="col-lg-12 animated fadeInLeft">
                 <div class="mail-box-header">
-                    <!-- <div class="pull-right tooltip-demo">
-                            <a href="/mailbox" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> Draft</a>
-                            <a href="/mailbox" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> Discard</a>
-                        </div> -->
+                   <div class="pull-right tooltip-demo">
+                            <a @click="goback" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> GO BACK</a>
+                        </div> 
                     <h2>
-                        Compse mail
+                        Compose Email
                     </h2>
                 </div>
                 <div class="mail-box">
@@ -57,10 +56,17 @@
 </template>
 
 <script>
+import { RouterFactory } from 'meteor/akryum:vue-router2'
+
     export default {
         mounted() {
             // Initialize summernote plugin
             $('.summernote').summernote();
+        }, 
+        methods: {
+            goback () {
+                this.$router.go(-1);
+            }
         }
     
     };

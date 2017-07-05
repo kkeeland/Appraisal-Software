@@ -10,6 +10,8 @@ import Dashboard from '/client/ui/Dashboard.vue'
 import Test from '/imports/ui/Test.vue'
 import emailCompose from '/client/ui/emailCompose.vue'
 import Billingdashboard from '/client/ui/Billingdashboard.vue'
+import Addinsurance from '/client/ui/Addinsurance.vue'
+
 
 
 RouterFactory.configure(factory => {
@@ -39,6 +41,11 @@ RouterFactory.configure(factory => {
         path:'/billingdashboard', 
         name:'billingdashboard',
         component: Billingdashboard,
+    }, 
+    {
+        path:'/addinsurance', 
+        name:'addinsurance',
+        component: Addinsurance,
     }
         
 

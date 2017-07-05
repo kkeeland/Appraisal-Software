@@ -2,50 +2,47 @@
     <div class="wrapper wrapper-content">
     
         <div class="row">
-            <div id="reportrange" class="pull-right text-center" style="background: #fff; cursor: pointer; padding: 12px 10px; border: 1px solid #ccc; width:300px;margin-bottom:20px;margin-right: 15px;">
-                <i class="fa fa-calendar"></i>&nbsp;
-                <span></span> <b class="caret"></b>
-            </div>
+    
         </div>
         <div class="row">
             <div class="col-lg-3">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <span class="label label-success pull-right">This Month</span>
-                        <h5>Income</h5>
+                        <span class="label label-success pull-right"></span>
+                        <h5>Total Billed</h5>
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">$22,221</h1>
     
-                        <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
-                        <small>Total income</small>
+                        <div class="stat-percent font-bold text-success"><i class="fa"></i></div>
+                        <small>Total Billed by selected Dates</small>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <span class="label label-success pull-right">This Month</span>
+                        <span class="label label-overdue pull-right">High</span>
                         <h5>Cycle Time</h5>
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">2.1</h1>
     
-                        <div class="stat-percent font-bold text-info">10% <i class="fa fa-level-down"></i></div>
-                        <small>Days</small>
+                        <div class="stat-percent font-bold text-info"><i class="fa"></i></div>
+                        <small>Days from date requested</small>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <span class="label label-primary pull-right">Today</span>
+                        <span class="label label-primary pull-right"></span>
                         <h5>New Assignments</h5>
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">12</h1>
     
-                        <div class="stat-percent font-bold text-navy">44% <i class="fa fa-level-up"></i></div>
+                        <div class="stat-percent font-bold text-navy"><i class="fa"></i></div>
                         <small>New Appraisal Request</small>
                     </div>
                 </div>
@@ -53,70 +50,64 @@
             <div class="col-lg-3">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <span class="label label-primary pull-right">Open Task</span>
-                        <h5>Open Task Items</h5>
+                        <span class="label label-paid pull-right">Currently</span>
+                        <h5>Open Reminders</h5>
                     </div>
                     <div class="ibox-content">
                         <h1 class="no-margins">10</h1>
     
-                        <small>In first month</small>
+                        <small>active reminders</small>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-bottom:20px;">
-            <div class="form-group">
+       
     
-    
-                <div id="statusselector" class="">
-                    <label class="col-md-12 control-label">Assignment Type Filter:</label>
-                    <div class="col-md-2">
-                        <select class="form-control" id="selectorstatus">
-                                                                        <option>All Status Types</option>
-                                                                      <option>New Assignments</option>
-                                                                      <option>Scheduled</option>
-                                                                      <option>Inspected</option>
-                                                                      <option>Billed</option>
-                                                                      <option>Overdue</option>
-                                                                      <option>Paid</option>
-                                                                      <option>Cancelled</option>
-                                                                      </select>
-                    </div>
-                </div>
-            </div>
-        </div>
     
     
         <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
             <md-toolbar>
                 <div class="md-toolbar-container">
-                    <h3 class="md-title">Sidenav content</h3>
+                    <h3 class="md-title">Select Status</h3>
                 </div>
             </md-toolbar>
     
             <md-list>
-                <md-subheader>Navigation</md-subheader>
+                <div id="reportrange" class="pull-right text-center" style="background: #fff; cursor: pointer; padding: 12px 10px; border: 1px solid #ccc; width:300px;margin-bottom:20px;margin-right: 15px;">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <b class="caret"></b>
+                </div>
     
                 <md-list-item>
-                    <md-icon>move_to_inbox</md-icon> <span>Inbox</span>
+                    <span class="label" style="padding: 7px;font-size: 20px;">All Status Types</span>
                 </md-list-item>
     
                 <md-list-item>
-                    <md-icon>send</md-icon> <span>Outbox</span>
+                    <span class="label label-new-assignment" style="padding: 7px;font-size: 20px;">New Assignment</span>
                 </md-list-item>
     
                 <md-list-item>
-                    <md-icon>delete</md-icon> <span>Trash</span>
+                    <span class="label label-scheduled" style="padding: 7px;font-size: 20px;">Scheduled</span>
                 </md-list-item>
     
                 <md-list-item>
-                    <md-icon>error</md-icon> <span>Spam</span>
-    
-                    <md-divider class="md-inset"></md-divider>
+                    <span class="label label-inspected " style="padding: 7px;font-size: 20px;">Inspected</span>
+                </md-list-item>
+                <md-list-item>
+                    <span class="label label-billed " style="padding: 7px;font-size: 20px;">Billed</span>
+                </md-list-item>
+                <md-list-item>
+                    <span class="label label-overdue" style="padding: 7px;font-size: 20px;">Overdue</span>
+                </md-list-item>
+                <md-list-item>
+                    <span class="label label-paid" style="padding: 7px;font-size: 20px;">Paid</span>
+                </md-list-item>
+                <md-list-item>
+                    <span class="label label-cancelled" style="padding: 7px;font-size: 20px;">Cancelled</span>
                 </md-list-item>
             </md-list>
     
-            <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
+            <md-button class="md-raised md-success" @click="closeRightSidenav">Close</md-button>
         </md-sidenav>
     
     
@@ -125,11 +116,12 @@
             <div class="col-lg-12">
     
                 <md-toolbar>
-                    <md-button class="md-icon-button">
-                        <md-icon>menu</md-icon>
-                    </md-button>
-    
                     <h2 class="md-title" style="flex: 1">Assignments</h2>
+                    <md-button @click="toggleRightSidenav" class="md-icon-button">
+                        <md-icon>filter_list</md-icon>
+                    </md-button>
+                    <md-button @click="toggleRightSidenav" class="md-raised">Fliter by Date/Status</md-button>
+                    
                 </md-toolbar>
     
     

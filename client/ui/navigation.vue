@@ -44,7 +44,7 @@
                 </li>
                 <li class="">
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.mailbox">Add New </span></a>
-                    <ul class="nav nav-second-level collapse <in></in>">
+                    <ul class="nav nav-second-level collapse in">
                         <li><a href="mailbox">Add Insurance Company</a></li>
                         <li><a href="emailView">Add New Appraiser</a></li>
                         <li><a href="emailCompose">Add New Shop</a></li>

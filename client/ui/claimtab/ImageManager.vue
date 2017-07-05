@@ -6,7 +6,7 @@
 
         <h2 class="h2heading styleh2">Original Photos</h2>
         <div style="">
-        <button class="btn btn-primary">Add Images</button>&nbsp;<button class="btn btn-primary">Print PDF</button>&nbsp;<button class="btn btn-primary">Print Selected</button>&nbsp;<button class="btn btn-primary">Delete Selected</button>
+        <button class="btn btn-primary">Add Images</button>&nbsp;<button class="btn btn-primary">Print All</button>&nbsp;<button class="btn btn-primary">Print Selected</button>&nbsp;<button class="btn btn-primary">Delete Selected</button>
         </div>
 
         <!-- Empty Row -->
@@ -88,7 +88,7 @@
         <!-- End of Row -->
         <h2 class="h2heading styleh2">Supplement Photos</h2>
         <div style="">
-        <button class="btn btn-primary">Add Images</button>&nbsp;<button class="btn btn-primary">Print PDF</button>&nbsp;<button class="btn btn-primary">Print Selected</button>&nbsp;<button class="btn btn-primary">Delete Selected</button>
+        <button class="btn btn-primary">Add Images</button>&nbsp;<button class="btn btn-primary">Print All</button>&nbsp;<button class="btn btn-primary">Print Selected</button>&nbsp;<button class="btn btn-primary">Delete Selected</button>
         </div>
 
          <!-- Empty Row -->
