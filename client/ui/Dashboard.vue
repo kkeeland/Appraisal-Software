@@ -68,7 +68,7 @@
         <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
             <md-toolbar>
                 <div class="md-toolbar-container">
-                    <h3 class="md-title">Select Status</h3>
+                    <h3 class="md-title">Pick date & Assignment Type</h3>
                 </div>
             </md-toolbar>
     

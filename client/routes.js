@@ -18,7 +18,7 @@ RouterFactory.configure(factory => {
   // Simple routes
   factory.addRoutes([
     {
-      path: '/',
+      path: '/dashboard',
       name: 'dashboard',
       component: Dashboard,
     }, 

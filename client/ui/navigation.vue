@@ -13,7 +13,7 @@
                         <br />
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold" style="font-size:1.5em;">Terry Earl</strong>
-                                         </span> <span class="text-muted text-xs block">Owner - Tuscon <b class="caret"></b></span> </span>
+                                             </span> <span class="text-muted text-xs block">Owner - Tuscon <b class="caret"></b></span> </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a href="profile">Profile</a></li>
@@ -30,32 +30,32 @@
                     </div>
                 </li>
     
-                <li>
-                    <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+                <li class="nav-hover">
+                    <router-link to="dashboard"><i class="fa fa-th-large icon-label"></i><span class="nav-label">Dashboard</span></router-link>
                 </li>
-                <li>
-                    <a href="claim"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.layouts">New Assignment</span> </a>
+                <li class="nav-hover">
+                    <router-link to="claim"><i class="fa fa-edit icon-label"></i> <span class="nav-label" data-i18n="nav.layouts">New Assignment</span> </router-link>
                 </li>
-                <li>
-                    <a href="billingdashboard" data-target="#billingmenu" data-toggle=""><i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.graphs">Billing Reports</span></a>
+                <li class="nav-hover">
+                    <router-link to="billingdashboard"><i class="fa fa-money icon-label"></i> <span class="nav-label" data-i18n="nav.graphs">Billing Reports</span></router-link>
                     <!-- <ul class="nav nav-second-level collapse in" id="billingmenu">
-                        <li class=""><a href="graphFlot">Billing Reports</a></li>
-                    </ul> -->
+                            <li class=""><a href="graphFlot">Billing Reports</a></li>
+                        </ul> -->
                 </li>
-                <li class="">
-                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.mailbox">Add New </span></a>
+                <li class="nav-hover">
+                    <a href="#"><i class="fa fa-edit icon-label"></i> <span class="nav-label " data-i18n="nav.mailbox">Add New </span></a>
                     <ul class="nav nav-second-level collapse in">
-                        <li><a href="mailbox">Add Insurance Company</a></li>
-                        <li><a href="emailView">Add New Appraiser</a></li>
-                        <li><a href="emailCompose">Add New Shop</a></li>
-                        <li><a href="emailTemplates">Add New Adjuster</a></li>
+                        <li class="nav-hover"><router-link to="emailCompose">Add Insurance Company</router-link></li>
+                        <li class="nav-hover"><a class="nav-label" href="emailView">Add New Appraiser</a></li>
+                        <li class="nav-hover"><a class="nav-label" href="emailCompose">Add New Shop</a></li>
+                        <li class="nav-hover"><a class="nav-label" href="emailTemplates">Add New Adjuster</a></li>
                     </ul>
                 </li>
     
     
     
-                <li>
-                    <a href="metrics"><i class="fa fa-database"></i> <span class="nav-label" data-i18n="nav.metrics">Settings</span> </a>
+                <li class="nav-hover">
+                    <router-link to="dashboard"><i class="fa fa-database nav-label"></i> <span class="nav-label" data-i18n="nav.metrics">Settings</span> </router-link>
                 </li>
     
             </ul>
@@ -70,15 +70,15 @@
 <script>
     export default {
         name: 'navigation',
-        data(){
+        data() {
             return {
                 namelabel: "TE"
             }
         },
         methods: {
-
+    
         }
-
-        
+    
+    
     };
 </script>

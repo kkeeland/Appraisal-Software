@@ -53,6 +53,13 @@ h2 {
 .md-theme-default.md-sidenav .md-sidenav-content {
 	z-index: 999;
 }
+li.nav-hover > a:hover, li.nav-hover > a:active, li.nav-hover > a:focus {
+	background-color: #f8ac59 !important;
+	color:white !important;
+}
+li.nav-hover > a {
+	color:white !important;
+}
 .h2button {
 	background-color: #7d2e2c;color: white;margin-bottom: 20px;padding: 20px 20px;border-radius:5px;font-weight:400;
 }
